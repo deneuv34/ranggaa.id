@@ -45,11 +45,6 @@ export default {
   font-weight: 400;
   font-family: 'Signika Negative';
 }
-.animated {
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 .button {
   margin-bottom: 10px;
   width: 30ch
