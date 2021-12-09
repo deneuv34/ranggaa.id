@@ -1,58 +1,30 @@
 <template>
-  <div>
-    <nav
-      class="navbar header has-shadow is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a
-          class="navbar-item"
-          href="/"
-        >
-          <img
-            src="~assets/buefy.png"
-            alt="Buefy"
-            height="28"
-          >
-        </a>
-
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
+  <div id="app">
+    <div class="section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="typing-demo"> 
+            Hello, I am Rangga :D
+          </div>
         </div>
       </div>
-    </nav>
+      <Nuxt />
+    </div>
 
-    <section class="main-content columns">
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">
-          General
-        </p>
-        <ul class="menu-list">
-          <li
-            v-for="(item, key) of items"
-            :key="key"
-          >
-            <NuxtLink
-              :to="item.to"
-              exact-active-class="is-active"
-            >
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </aside>
-
-      <div class="container column is-10">
-        <Nuxt />
+    <footer class="footer">
+      <div class="container is-centered">
+        <div>
+          <p>Made with <span><fa-icon :icon="['fas', 'heart']" style="color:red" /></span> and <span style="color:#4DE7A8">Nuxt</span> </p>
+        </div>
       </div>
-    </section>
-  </div>
+    </footer>
+  </div>    
 </template>
 
 <script>
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 export default {
   data () {
     return {
@@ -69,6 +41,73 @@ export default {
         }
       ]
     }
-  }
+  },
+  
+  computed: {
+    faGithub() {
+      return faGithub
+    },
+    faHeart() {
+      return faHeart
+    },
+    faLinkedin() {
+      return faLinkedin
+    }
+  },
 }
 </script>
+
+<style>
+.wrapper {
+  height: 25vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  font-size: 2em;
+  color: '#1a202c';
+  font-family: 'Readex Pro';
+  font-weight: 700;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+  font-family: 'Readex Pro';
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+</style>

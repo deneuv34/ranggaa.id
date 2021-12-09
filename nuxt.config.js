@@ -29,8 +29,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/google-fonts',
+    ['@nuxtjs/fontawesome', {
+      icons: {
+        solid: ['faHeart'],
+        brands: ['faGithub', 'faLinkedin', 'faMedium', 'faInstagram']
+      },
+      component: 'fa',
+      suffix: true
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -38,6 +46,15 @@ export default {
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
   ],
+  googleFonts: {
+    families: {
+      'Readex+Pro': [400, 500, 700],
+      'Signika+Negative': [400, 500, 700],
+    },
+    download: true,
+    overwriting: false,
+    display: 'swap'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
