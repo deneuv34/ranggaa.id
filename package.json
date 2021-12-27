@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
