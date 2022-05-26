@@ -21,7 +21,7 @@
     "nuxt-buefy": "^0.4.23"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.2",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
