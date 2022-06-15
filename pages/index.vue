@@ -7,7 +7,7 @@
             <div class="card-content"><span><fa-icon :icon="['fab', 'linkedin']" style="margin-right:10px" /></span>LinkedIn</div>
           </a>
           <a class="button" href="https://github.com/deneuv34">
-            <div class="card-content"><span><fa-icon :icon="['fab', 'github']" style="margin-right:10px" /></span> GitHub</div>
+            <div class="card-content"><span><fa-icon :icon="['fab', 'github']" style="margin-right:10px" /></span> Github</div>
           </a>
           <a class="button" href="https://instagram.com/deneuv34">
             <div class="card-content"><span><fa-icon :icon="['fab', 'instagram']" style="margin-right:10px" /></span> Instagram</div>
