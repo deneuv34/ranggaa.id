@@ -16,9 +16,9 @@
     "*.{js,vue}": "eslint"
   },
   "dependencies": {
-    "core-js": "^3.23.0",
+    "core-js": "^3.25.1",
     "nuxt": "^2.15.7",
-    "nuxt-buefy": "^0.4.23"
+    "nuxt-buefy": "^0.4.24"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
@@ -41,7 +41,7 @@
     "eslint-plugin-vue": "^7.12.1",
     "husky": "^8.0.1",
     "jest": "^27.5.1",
-    "lint-staged": "^13.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.6.2",
     "ts-jest": "^27.1.3",
     "vue-jest": "^3.0.4"
